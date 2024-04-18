@@ -20,7 +20,7 @@ export const UserList = () => {
         <div>
             <h1 style={{fontSize: '99px', textAlign: 'center',}}>Задание 2</h1>
              {data.map(item => ( 
-                <div key={item.id} style = {{
+                <ul key={item.id} style = {{
                     textAlign: 'center',
                     width: '360px',
                     height: 'auto',
@@ -34,9 +34,9 @@ export const UserList = () => {
                     backgroundColor: 'rgb(220, 220, 220)',
                     color: 'black'
                 }}> 
-                    <h1>Name:{item.name}</h1>
-                    <h2>UserName:{item.username}</h2> 
-                </div>
+                    <li style={{listStyleType: 'none'}}>Name:{item.name}</li>
+                    <li style={{listStyleType: 'none'}}>UserName:{item.username}</li> 
+                </ul>
             ))} 
         </div>
     )
